@@ -1,1 +1,1 @@
-ls -l | sed's/$/$\n/'
+ls -l | sed -n 's/$/$;/gp' | tr ';' '\n'
